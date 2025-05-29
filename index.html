@@ -1,0 +1,67 @@
+/*13. Create a Travel Booking Website 
+o Develop a travel booking website with information on destinations and 
+booking forms. 
+o Use HTML to structure the content, CSS to style the website, and 
+JavaScript to add interactive elements. 
+o Make at least five git commits, ensuring each commit reflects significant 
+progress 
+o Host the website on GitHub Pages. */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>✈️ TravelNow</h1>
+    <p>Your gateway to the world</p>
+  </header>
+
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://placeimg.com/300/200/nature" alt="Paris">
+        <h3>Paris</h3>
+        <p>The city of lights and love.</p>
+      </div>
+      <div class="card">
+        <img src="https://placeimg.com/300/200/beach" alt="Bali">
+        <h3>Bali</h3>
+        <p>Relax in the tropics and enjoy paradise.</p>
+      </div>
+      <div class="card">
+        <img src="https://placeimg.com/300/200/architecture" alt="New York">
+        <h3>New York</h3>
+        <p>Discover the city that never sleeps.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Book Your Trip</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" id="name" required>
+      <input type="email" placeholder="Email" id="email" required>
+      <select id="destination" required>
+        <option value="">Select Destination</option>
+        <option value="Paris">Paris</option>
+        <option value="Bali">Bali</option>
+        <option value="New York">New York</option>
+      </select>
+      <input type="date" id="date" required>
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="confirmation"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 TravelNow. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
